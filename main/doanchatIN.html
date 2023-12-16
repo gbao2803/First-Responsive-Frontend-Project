@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đoạn chat IN</title>
+  <link rel="stylesheet" href="/main/output.css">
+  <link rel="stylesheet" href="/default.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="flex justify-center items-center">
+  <!--BIG CONTAINER-->
+  <div class="w-full min-h-screen bg-main-theme shadow-sm overflow-hidden">
+
+    <!-- Top navbar -->
+    <nav class="bg-second-theme h-24 w-full flex justify-between items-center p-2" >
+      <div class="back-button xl:hidden">
+        <a href="./doanchat.html">
+          <i class='bx bx-arrow-back text-white font-bold text-3xl'></i>
+        </a>
+      </div>
+      <label class="logo cursor-pointer flex justify-center items-center">
+        <div class="chat-image avatar mr-2 flex justify-center items-center">
+          <div class="back-button flex mx-2 justify-center items-center">
+            <a href="./doanchat.html" class="hidden xl:flex m-auto"> 
+              <i class='bx bx-arrow-back text-white font-bold text-3xl '></i>
+            </a>
+          </div>
+          <div class="w-12 rounded-full">
+            <img alt="mentor" src="/images/tenhag.png" />        
+          </div>      
+        </div>
+        <div class="grid-cols-1">
+          <p class=" text-xl sm:text-xl md:text-lg lg:text-xl">Thầy Mười</p>
+          <p class=" text-xs sm:text-sm md:text-xs lg:text-base text-green-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Đang hoạt động</p>
+        </div>
+      </label>
+          <ul class="float-left hidden xl:flex">
+           <li class="inline-block mr-5"><a href="./trangchu.html">Trang chủ</a></li>
+              <li class="inline-block mr-5"><a href="./phonghoc.html">Phòng học</a></li>
+              <li class="inline-block mr-5"><a href="./tailieu.html">Tài liệu</a></li>
+              <li class="inline-block"><a href="./thongbao.html">Thông báo</a></li>
+              
+          </ul>
+          <div class=" justify-center items-center hidden xl:flex">
+                <div class="form-control">
+                  <input type="text" placeholder="Tìm kiếm" class="input input-bordered bg-transparent shadow-none focus:outline-white focus:text-white text-white placeholder:text-white border-x-0 border-t-0 border-b border-white w-24 md:w-auto" />
+                </div>
+                <div class="text-4xl mx-5 text-white">
+                  <a href="doanchat.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+                </div>
+                <div class="dropdown dropdown-end hidden xl:inline-block">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-16 rounded-full border border-new-green">
+                        <img  src="/images/me.jpg" />
+                      </div>
+                    </div>
+                    <ul class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black bg-new-green rounded-box w-52">
+                      <li><a href="#">Thông tin cá nhân</a></li>
+                      <li><a href="caidat.html">Cài đặt</a></li>
+                      <li><a href="login.html">Đăng xuất</a></li>
+                    </ul>
+                </div>
+              </div>
+        <div class="top-navbar-searchchat">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="./profile.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+        </div>
+    </nav>
+
+    <!-- wrapper for content -->
+    <div class=" w-full h-screen p-5 flex flex-col">
+      
+      <div class="chat chat-start">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img alt="mentor" src="/images/tenhag.png" />
+          </div>
+        </div>
+        <div class="chat-header">
+          Thầy Mười
+          <time class="text-xs opacity-50">23:44</time>
+        </div>
+        <div class="chat-bubble">
+          Hôm nay thầy bay qua Manchester làm việc nên em nghỉ một hôm nhé!
+        </div>
+        <div class="chat-footer opacity-50">
+          
+        </div>
+      </div>
+
+      <div class="chat chat-end">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img alt="user" src="/images/me.jpg" />
+          </div>
+        </div>
+        <div class="chat-header">
+          Bẻo Nguỹn
+          <time class="text-xs opacity-50">23:45</time>
+        </div>
+        <div class="chat-bubble">Dạ ok thầy ơi</div>
+        <div class="chat-footer opacity-50">
+          Đã xem 23:45
+        </div>
+      </div>
+
+      <p class="text-center text-black">9:53</p>
+
+      <div class="chat chat-end">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img alt="user" src="/images/me.jpg" />
+          </div>
+        </div>
+        <div class="chat-header">
+          Bẻo Nguỹn
+          <time class="text-xs opacity-50">9:53</time>
+        </div>
+        <div class="chat-bubble">Thầy ơi Casemiro bị thẻ đỏ rồi</div>
+        <div class="chat-footer opacity-50">
+          Đã xem 9:54
+        </div>
+      </div>
+      
+      <div class="chat chat-start">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img alt="mentor" src="/images/tenhag.png" />
+          </div>
+        </div>
+        <div class="chat-header">
+          Thầy Mười
+          <time class="text-xs opacity-50">10:11</time>
+        </div>
+        <div class="chat-bubble">
+          Không sao em ơi, đừng quên MU của thầy còn có Maguire!!!
+        </div>
+        
+      </div>
+
+      <div class="chat chat-end">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img alt="user" src="/images/me.jpg" />
+          </div>
+        </div>
+        <div class="chat-header">
+          Bẻo Nguỹn
+          <time class="text-xs opacity-50">10:13</time>
+        </div>
+        <div class="chat-bubble">
+          <img src="/images/hahasticker.png" class="w-48" alt="sticker">
+        </div>
+        <div class="chat-footer opacity-50">
+          Đã xem 10:40
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center my-auto ">
+        <div class=" text-lg text-green-500 sm:text-xl md:text-xl">
+          <i class='bx bx-plus-circle'></i>
+          <i class='bx bx-camera hidden' ></i>
+          <i class='bx bx-image-add hidden' ></i>
+          <i class='bx bx-microphone hidden' ></i>
+        </div>
+        <input type="text" placeholder="Aa" 
+          class="input input-bordered input-accent focus:outline-green-500 border-green-500 focus:border-green-500 bg-transparent w-28 mx-2 xs:w-40 sm:w-96 xl:w-full xl:max-w-5xl" />
+        <div class="text-lg sm:text-xl text-green-500 md:text-xl ">
+          <i class='bx bx-send' ></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

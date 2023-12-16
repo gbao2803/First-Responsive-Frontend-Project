@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body{
+
+  font-family: Inter;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iphone-container{
+  border: solid 2px black;
+  width: 428px;
+  height: 926px;
+  background: #F2FFF2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.logo{
+  width: 424px;
+  height: 352px;
+  display: flex;
+  border-bottom: solid 1px black;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #709C6F, #9FBB73);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.forgot-container{
+  width: 380px;
+  height: 300px;
+  margin: 56px 24px 0px 24px;
+}
+.forgot-text h1{
+  font-weight: 500;
+  text-shadow: 
+  0px 1px 5px rgba(0, 0, 0, 0.288);
+}
+.forgot-input{
+  margin-top: 75px;
+}
+.forgot-input label, input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1250em;
+  border-radius: 15px;
+}
+.forgot-input label{
+  text-shadow: 
+  0px 1px 5px rgba(0, 0, 0, 0.26);
+}
+.forgot-input input{
+  border: solid 1px black;
+  margin: 5px 0px;
+  background-color: white;
+  box-shadow: 
+  2px 2px 10px rgba(0, 0, 0, 0.253);
+}
+.forgot-button{
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forgot-button input{
+  width: 80%;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #000;
+  background: #709C6F;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 
+  0px 5px 10px rgba(0, 0, 0, 0.253);
+}
+.forgot-button input:hover{
+  background: #60865f;
+}
+.inputs{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.inputs input{
+  height: 45px;
+  width: 42px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.125rem;
+  font-weight:900;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.inputs input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.inputs input::-webkit-inner-spin-button,
+.inputs input::-webkit-outer-spin-button {
+  display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="lemonade" class="bg-gradient-to-tr from-green-200 min-h-screen flex justify-center items-center">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="/main/output.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <style>
+
+  </style>
+</head>
+<body class="min-h-screen">
+  
+  <div class=" flex justify-center items-center lg:h-screen min-h-screen m-6">
+
+    <!-- container -->
+    <div class=" bg-new-green xs:h-full md:min-h-screen lg:grid lg:grid-cols-5 shadow-xl border border-black rounded-2xl">
+
+      
+      <!-- image -->
+        <div class="xs:h-96 flex justify-center items-center bg-second-theme lg:hidden rounded-t-2xl">
+          <img src="/images/logo.png">
+        </div>
+
+      <!-- login form -->
+        <div class="w-full lg:col-span-2 p-5 relative my-auto lg:m-auto">
+
+           <div class="flex justify-evenly">
+              <button onclick="location.href='/main/login.html'"
+              class="btn w-1/2 mr-2 border-none bg-transparent drop-shadow-xl hover:bg-green-200 text-black uppercase xs:text-xs sm:text-sm text-sm md:text-xl">Đăng nhập</button>
+              <button onclick="location.href='/main/register.html'"
+              class="btn w-1/2 bg-transparent border-none drop-shadow-xl xs:text-xs sm:text-sm md:text-xl uppercase hover:bg-green-200">Đăng ký</button>
+            </div>
+            <!-- input box -->
+            <div class="mt-10">
+              <p class="text-center font-bold text-xl md:text-2xl lg:text-3xl mb-5">Nhập mã mà chúng tôi đã gửi đến địa chỉ email của bạn</p>
+              <p class="text-center text-sm md:text-base lg:text-xl mb-5">
+                Chúng tôi đã gửi một mã gồm 6 chữ số đến địa chỉ email của bạn.
+                Hãy nhập mã đó để đặt lại mật khẩu
+              </p>
+              <input type="text" placeholder="Nhập mã" class="input input-bordered input-success text-center w-full my-3 lg:my-5" />
+            </div>
+            
+            <!-- sign in button -->
+            <div>
+              <button class="btn btn-success w-full my-5 bg-second-theme hover:bg-green-800 text-white uppercase text-sm md:text-xl">Đặt lại mật khẩu</button>
+            </div>
+
+            
+
+        </div>
+
+      <!-- image -->
+        <div class="xs:h-96 lg:flex justify-center items-center hidden bg-second-theme lg:col-span-3 lg:h-full rounded-r-2xl">
+          <img src="/images/logo.png">
+        </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

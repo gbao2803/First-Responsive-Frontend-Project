@@ -1,0 +1,385 @@
+<!DOCTYPE html >
+<html lang="en" class="bg-new-green">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="/main/output.css">
+  <link rel="stylesheet" href="/default.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center">
+
+  <!-- BIG CONTAINER -->
+  <div class="min-h-screen w-full overflow-hidden">
+
+    <!-- Top navbar -->
+    <nav class="bg-second-theme h-24 w-full flex justify-between items-center p-2" >
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class='bx bx-menu text-white' ></i>
+        </label>
+        <label class="logo cursor-pointer flex justify-center items-center">
+          <h1 onclick="location.href='/main/trangchu.html'"
+          class="cursor-pointer ml-0 sm:ml-9 md:ml-10 xl:mr-5 xl:ml-0">MyMentor</h1>
+          <ul class="float-left">
+              <li class="inline-block mr-5"><a href="./login.html" id="top-active">Trang chủ</a></li>
+              <li class="inline-block mr-5"><a href="./login.html">Phòng học</a></li>
+              <li class="inline-block mr-5"><a href="./login.html">Tài liệu</a></li>
+              <li class="inline-block"><a href="./login.html">Thông báo</a></li>
+            </ul>  
+        </label>
+        <div class=" justify-center items-center hidden xl:flex">
+          <div class="form-control mx-2">
+            <input type="text" placeholder="Tìm kiếm" class="input input-bordered bg-transparent shadow-none focus:outline-white focus:text-white text-white placeholder:text-white border-x-0 border-t-0 border-b border-white w-24 md:w-auto" />
+          </div>
+          
+          <div class="dropdown dropdown-end hidden xl:inline-block">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-16  rounded-full border border-black">
+                  <img  src="/images/guest.png" />
+                </div>
+              </div>
+              <ul class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black bg-new-green rounded-box w-52">
+                <li><a href="./login.html">Đăng nhập</a></li>
+                <li><a href="./register.html">Đăng ký</a></li>
+                
+              </ul>
+          </div>
+        </div>
+        <div class="top-navbar-searchchat">
+            <a href="./login.html"><i class='bx bx-search'></i></a>
+            <a href="./login.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+        </div>
+    </nav>
+    
+    <!-- banner -->
+    <div class="h-128 bg-[linear-gradient(to_right_bottom,rgba(2,2,2,0.8),rgba(16,71,52,0.8)),url('/images/mentor.jpg')] p-10 flex flex-col items-center justify-center">
+          <h1 class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center tracking-wider italic" style="font-family: 'Poltawski Nowy', serif;">"Dạy học là nghề tạo ra tất cả các nghề khác"</h1> 
+          <div class=" rounded-3xl w-full xl:w-4/5 max-w-6xl xl:flex xl:justify-evenly xl:items-center my-16 p-5 bg-white shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500">
+            <!-- search / categories -->
+            <div class="sm:grid sm:grid-cols-2 xl:flex">
+                <input type="text" placeholder="Bạn đang tìm kiếm nội dung gì" class="input my-2 bg-transparent rounded-none text-black input-bordered input-success w-full xl:w-128" />
+                <select class="select my-2 bg-transparent placeholder:text-black text-black rounded-none select-success w-full xl:w-48">
+                  <option selected class="text-black">Tất cả</option>
+                  <option>Gia sư</option>
+                  <option>Tài liệu</option>
+                  <option>Phòng học</option>
+                </select>      
+            </div>
+            <div class=" my-2 flex justify-center items-center">
+              <button class="btn btn-success w-3/5 max-w-xs xl:w-full xl:px-12">Tìm kiếm</button>
+            </div>
+          </div>
+    </div>
+    
+    <!-- content container -->
+    <div class=" w-full px-5 flex flex-col">
+      <div class=" w-full my-5 grid grid-cols-3 md:grid-cols-6 gap-3 md:p-8 xl:hidden">
+          <div class="mx-auto flex flex-col justify-center items-center hover:scale-105 active:scale-90 transition-all duration-300 cursor-pointer">
+            <div class=" w-16 h-16 xs:w-24 xs:h-24 flex justify-center items-center rounded-full object-cover bg-yellow-200 shadow-yellow-100 shadow-lg">
+              <img src="/images/gradhat.webp">
+            </div>
+            <p class="text-black font-medium text-xs xs:text-lg">Gia sư</p>
+          </div>
+          <div class="mx-auto flex flex-col justify-center items-center hover:scale-105 active:scale-90 transition-all duration-300 cursor-pointer">
+            <div class=" w-16 h-16 xs:w-24 xs:h-24 flex justify-center items-center rounded-full object-cover bg-red-400 shadow-red-200 shadow-lg">
+              <img src="/images/onlineclass.png">
+            </div>
+            <p class="text-black font-medium text-xs xs:text-lg">Phòng học</p>
+          </div>
+          <div class="mx-auto flex flex-col justify-center items-center hover:scale-105 active:scale-90 transition-all duration-300 cursor-pointer">
+            <div class=" w-16 h-16 xs:w-24 xs:h-24 flex justify-center items-center rounded-full object-cover bg-green-400 shadow-green-200 shadow-lg">
+              <img src="/images/book.jpg">
+            </div>
+            <p class="text-black font-medium text-xs xs:text-lg">Tài liệu</p>
+          </div>         
+          <div class="mx-auto flex flex-col justify-center items-center hover:scale-105 active:scale-90 transition-all duration-300 cursor-pointer">
+            <div class=" w-16 h-16 xs:w-24 xs:h-24 flex justify-center items-center rounded-full object-cover bg-blue-300 shadow-blue-200 shadow-lg">
+              <img src="/images/chat.png">
+            </div>
+            <p class="text-black font-medium text-xs xs:text-lg">Tin nhắn</p>
+          </div>
+          <div class="mx-auto flex flex-col justify-center items-center hover:scale-105 active:scale-90 transition-all duration-300 cursor-pointer">
+            <div class=" w-16 h-16 xs:w-24 xs:h-24 flex justify-center items-center rounded-full object-cover bg-violet-200 shadow-violet-100 shadow-lg">
+              <img src="/images/wallet.png">
+            </div>
+            <p class="text-black font-medium text-xs xs:text-lg">Ví tiền</p>
+          </div>
+          <div class="mx-auto flex flex-col justify-center items-center hover:scale-105 active:scale-90 transition-all duration-300 cursor-pointer">
+            <div class=" w-16 h-16 xs:w-24 xs:h-24 flex justify-center items-center rounded-full object-cover bg-zinc-200 shadow-slate-100 shadow-lg">
+              <img src="/images/cog.png">
+            </div>
+            <p class="text-black font-medium text-xs xs:text-lg">Cài đặt</p>
+          </div>
+          
+      </div>
+      <div class="p-0">
+        <div class="flex justify-between items-center my-5 ">
+          <p class="text-black font-medium text-xs xs:text-base md:text-2xl">Gia sư được đề xuất</p>
+          <p class=" font-medium text-xs xs:text-base md:text-base">Xem thêm</p>
+        </div>
+        <div class="flex overflow-auto no-scrollbar box-scroll">
+          <div onclick="location.href='/main/rating.html'"
+          class="card w-48 xs:w-64 md:w-96 bg-base-100 shadow-xl max-h-fit shrink-0 active:scale-95 transition-all duration-200 cursor-pointer">
+            <figure><img src="/images/thaygiao1.jfif" alt="mentor" class="max-h-64 h-64 object-cover w-full" ></figure>
+            <div class="card-body p-5 sm:p-8">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">Thầy Bẻo</h2>
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">4.6<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i></h2>
+              </div>
+              <p class="text-xs xs:text-sm md:text-base text-justify text-white">
+                Sẽ cùng học trò trải qua những năm tháng thăng trầm.
+                Cho dù thành tích học tập bết bát,
+                thầy vẫn mãi giữ lửa tình yêu với tất cả các em.
+              </p>
+              <div class="card-actions flex items-center justify-end">
+                <div class="badge badge-success badge-outline text-xs xs:text-sm md:text-base">Gia sư</div>
+                <div class="badge badge-error badge-outline text-xs xs:text-sm md:text-base">Toán</div>
+                <div class="badge badge-info badge-outline text-xs xs:text-sm md:text-base">Lý</div>    
+              </div>
+            </div>
+          </div>
+          <div class="card w-48 xs:w-64 md:w-96 ml-10  bg-base-100 shadow-xl max-h-fit shrink-0 active:scale-95 transition-all duration-200 cursor-pointer">
+            <figure><img src="/images/thaygiao2.jpg" alt="mentor" class="max-h-64 h-64 object-cover w-full" ></figure>
+            <div class="card-body p-5 sm:p-8">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">Thầy Hiển</h2>
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i></h2>
+              </div>
+              <p class="text-xs xs:text-sm md:text-base text-justify text-white">
+                Thầy giảng không nghe thì 10% MyELT (Không dạy những em nào có tên "Sơn")
+              </p>
+              <div class="card-actions flex items-center justify-end">
+                <div class="badge badge-success badge-outline text-xs xs:text-sm md:text-base">Gia sư</div>
+                <div class="badge badge-error badge-outline text-xs xs:text-sm md:text-base">Toán</div>
+                <div class="badge badge-info badge-outline text-xs xs:text-sm md:text-base">Lý</div>
+                <div class="badge badge-secondary badge-outline text-xs xs:text-sm md:text-base">Hóa</div>
+                <div class="badge badge-warning badge-outline text-xs xs:text-sm md:text-base">Anh</div>  
+              </div>
+            </div>
+          </div>
+          <div class="card w-48 xs:w-64 md:w-96 ml-10  bg-base-100 shadow-xl max-h-fit shrink-0 active:scale-95 transition-all duration-200 cursor-pointer">
+            <figure><img src="/images/tenhag.png" alt="mentor" class="h-64 max-h-64 w-full object-cover mx-auto" /></figure>
+            <div class="card-body p-5 sm:p-8">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">Thầy Mười</h2>
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">7<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i></h2>
+              </div>
+              <p class="text-xs xs:text-sm md:text-base text-white">
+                Thầy 7 sao vì muchas gracias aficions, esta es para vosotros SIUUUUUUUUU
+              </p>
+              <div class="card-actions flex items-center justify-end">
+                <div class="badge badge-success badge-outline text-xs xs:text-sm md:text-base">HLV</div>
+                <div class="badge badge-error badge-outline text-xs xs:text-sm md:text-base">MU</div>
+              </div>
+            </div>
+          </div>
+          <div class="card w-48 xs:w-64 md:w-96 ml-10  bg-base-100 shadow-xl max-h-fit shrink-0 active:scale-95 transition-all duration-200 cursor-pointer"> 
+            <figure><img src="/images/hsphong24.jpg" alt="mentor" class="h-64 max-h-64 w-full object-cover mx-auto" /></figure>
+            <div class="card-body p-5 sm:p-8">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">Lime Na</h2>
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i></h2>
+              </div>
+              <p class="text-xs xs:text-sm md:text-base text-white">
+                 Sóng bắt đầu từ gió <br>
+                 Gió bắt đầu từ đâu <br>
+                 Cô cũng không biết nữa <br>
+                 Khi nào ta học bài.
+              </p>
+              <div class="card-actions flex items-center justify-end">
+                <div class="badge badge-success badge-outline text-xs xs:text-sm md:text-base">Gia sư</div>
+                <div class="badge badge-secondary badge-outline text-xs xs:text-sm md:text-base">Hóa</div>
+                <div class="badge badge-warning badge-outline text-xs xs:text-sm md:text-base">Anh</div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card w-48 xs:w-64 md:w-96 ml-10  bg-base-100 shadow-xl max-h-fit shrink-0 active:scale-95 transition-all duration-200 cursor-pointer">
+            <figure><img src="/images/thaygiao4.jpg" alt="mentor" class="h-64 max-h-64 w-full object-cover mx-auto" /></figure>
+            <div class="card-body p-5 sm:p-8">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">Thầy Kỳ</h2>
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">4.5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i></h2>
+              </div>
+              <p class="text-xs xs:text-sm md:text-base text-white">
+                Lần đầu tiên trái thanh long có trong mì tôm...
+              </p>
+              <div class="card-actions flex items-center justify-end">
+                <div class="badge badge-success badge-outline text-xs xs:text-sm md:text-base">Gia sư</div>
+                <div class="badge badge-warning badge-outline text-xs xs:text-sm md:text-base">Anh</div>  
+                <div class="badge badge-info badge-outline text-xs xs:text-sm md:text-base">MC</div>  
+              </div>
+            </div>
+          </div>
+          <div class="card w-48 xs:w-64 md:w-96 ml-10  bg-base-100 shadow-xl max-h-fit shrink-0 active:scale-95 transition-all duration-200 cursor-pointer">
+            <figure><img src="/images/thaygiao5.jpg" alt="mentor" class="h-64 max-h-64 w-full object-cover mx-auto" /></figure>
+            <div class="card-body p-5 sm:p-8">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">Thầy Thịnh</h2>
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i></h2>
+              </div>
+              <p class="text-xs xs:text-sm md:text-base text-white">
+                Với học sinh, viết không chỉ đơn thuần là hoàn thành một bài tập làm văn, 
+                mà rộng hơn là phát triển tư duy và sử dụng ngôn ngữ
+                Do từng bước tạo ra chính mình như thế mà học sinh luôn cần được sống thật và nhờ đó, 
+                có được niềm vui khi viết, khi học.
+              </p>
+              <div class="card-actions flex items-center justify-end">
+                <div class="badge badge-success badge-outline text-xs xs:text-sm md:text-base">Gia sư</div>
+                <div class="badge badge-secondary badge-outline text-xs xs:text-sm md:text-base">Hóa</div>
+                <div class="badge badge-warning badge-outline text-xs xs:text-sm md:text-base">Anh</div>  
+              </div>
+            </div>
+          </div>
+          <div class="card w-48 xs:w-64 md:w-96 ml-10  bg-base-100 shadow-xl max-h-fit shrink-0 active:scale-95 transition-all duration-200 cursor-pointer">
+            <figure><img src="/images/hsphong34.jpg" alt="mentor" class="h-64 max-h-64 w-full object-cover mx-auto" /></figure>
+            <div class="card-body p-5 sm:p-8">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">Hà Hồ</h2>
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i></h2>
+              </div>
+              <p class="text-xs xs:text-sm md:text-base text-justify text-white">
+                 Chỉ yêu thương trẻ nhỏ là không đủ đối với người giáo viên. 
+                 Người giáo viên đầu tiên phải yêu và thấu hiểu vạn vật, 
+                 phải chuẩn bị cho bản thân, và thực sự nỗ lực vì điều đó.
+              </p>
+              <div class="card-actions flex items-center justify-end">
+                <div class="badge badge-success badge-outline text-xs xs:text-sm md:text-base">Gia sư</div>
+                <div class="badge badge-info badge-outline text-xs xs:text-sm md:text-base">Lý</div>
+              </div>
+            </div>
+          </div>
+          <div class="card w-48 xs:w-64 md:w-96 ml-10  bg-base-100 shadow-xl max-h-fit shrink-0 active:scale-95 transition-all duration-200 cursor-pointer">
+            <figure><img src="/images/thaygiao3.jpg" alt="mentor" class="h-64 max-h-64 w-full object-cover mx-auto" /></figure>
+            <div class="card-body p-5 sm:p-8">
+              <div class="flex justify-between items-center">
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">Ô Lê Sôn Sa</h2>
+                <h2 class="card-title text-white text-xs xs:text-xl md:text-2xl">4.8<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i></h2>
+              </div>
+              <p class="text-xs xs:text-sm md:text-base text-white">
+                 Nhìn các cầu thủ MU lười biếng trên sân, thầy càng quyết tâm dạy dỗ các em nên người.  
+              </p>
+              <div class="card-actions flex items-center justify-end">
+                <div class="badge badge-success badge-outline text-xs xs:text-sm md:text-base">Gia sư</div>
+                <div class="badge badge-warning badge-outline text-xs xs:text-sm md:text-base">Anh</div>  
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      
+    </div>  
+    
+    <div class="p0 flex flex-col justify-center items-center my-5 h-128">
+      <h1 class="text-black font-semibold text-lg sm:text-3xl md:text-4xl xl:text-7xl text-center my-5" style="font-family: 'Poppins', sans-serif;">
+        Hãy trải nghiệm 
+        <span class="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-300">MyMentor</span> <br>
+        ngay bây giờ cùng với 
+      </h1>
+            <div class="stats stats-vertical md:stats-horizontal lg:flex justify-center items-center h-auto w-full no-scrollbar overflow-visible bg-transparent text-black">
+              
+              <div class="stat md:flex flex flex-col justify-center items-center">
+                <div class="stat-title lg:text-xl text-zinc-500">Người dùng</div>
+                <div class="stat-value lg:text-6xl">4,200</div>
+                <div class="stat-desc lg:text-xl text-zinc-500">↗︎ 400 (22%)</div>
+              </div>
+              
+              <div class="stat  md:flex flex flex-col justify-center items-center">
+                <div class="stat-title lg:text-xl text-zinc-500">Người dùng mới</div>
+                <div class="stat-value lg:text-6xl">1,200</div>
+                <div class="stat-desc lg:text-xl text-zinc-500">↘︎ 90 (14%)</div>
+              </div>
+              
+              <div class="stat md:flex flex flex-col justify-center items-center">
+                <div class="stat-title lg:text-xl text-zinc-500">Lượt truy cập</div>
+                <div class="stat-value lg:text-6xl">31K</div>
+                <div class="stat-desc lg:text-xl text-zinc-500">Từ tháng 1 - tháng 12</div>
+              </div>
+              
+              
+              
+            </div>  
+          <div>
+            <button onclick="location.href='/main/login.html'"
+            class="btn btn-success font-bold text-white text-2xl m-5 md:px-10 h-24 flex justify-center items-center">Bắt đầu ngay</button>
+          </div>
+    </div>
+    <!-- Bottom navbar -->
+    <div class="bottom-navbar z-10">
+      <nav class="bottom-navbar-container">
+        <a href="./login.html"><i class='bx bx-video bx-flip-vertical' ></i></a>
+        <a href="./login.html"><i class='bx bx-file' ></i></a>
+        <a href="./login.html" id="active"><i class='bx bx-home-alt' ></i></a>
+        <a href="./login.html"><i class='bx bx-bell' ></i></a>
+        <a href="./login.html"><i class='bx bx-cog' ></i></a>
+      </nav>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer p-10 mb-16 xl:mb-0 flex-col sm:flex-row font-medium bg-success text-white xl:bg-second-theme flex justify-center sm:justify-evenly items-center text-xs">
+      <aside>
+        <img src="/images/logo.png" class="w-16 h-16">
+        <p>MyMentor</p>
+      </aside> 
+      <nav class="">
+        <header class="footer-title">Dịch vụ</header> 
+        <a class="link link-hover">Hỗ trợ</a>
+        <a class="link link-hover">Thuê gia sư</a>
+        <a class="link link-hover">Quảng cáo</a>
+      </nav> 
+      <nav class="">
+        <header class="footer-title">MyMentor</header> 
+        <a class="link link-hover">Về chúng tôi</a>
+        <a class="link link-hover">Liên lạc với chúng tôi</a>
+        <a class="link link-hover">Ứng tuyển gia sư</a>
+      </nav> 
+      <nav class="">
+        <header class="footer-title">Legal</header> 
+        <a class="link link-hover">Điều khoản sử dụng</a>
+        <a class="link link-hover">Chính sách bảo mật</a>
+        <a class="link link-hover">Chính sách Cookies</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    const slider = document.querySelector('.box-scroll');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+      slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+      });
+      slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+      });
+  </script>
+</body>
+</html>

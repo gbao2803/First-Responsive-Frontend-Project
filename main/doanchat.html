@@ -1,0 +1,319 @@
+<!DOCTYPE html >
+<html lang="en" class="bg-new-green">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đoạn chat</title>
+  <link rel="stylesheet" href="/main/output.css">
+  <link rel="stylesheet" href="/default.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="flex justify-center items-center">
+  <!-- BIG CONTAINER -->
+  <div class="min-h-screen w-full overflow-hidden ">
+
+    <!-- Top navbar -->
+    <nav class="bg-second-theme h-24 w-full flex justify-between items-center p-2" >
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class='bx bx-menu text-white' ></i>
+        </label>
+        <label class="logo cursor-pointer flex justify-center items-center">
+          <h1 onclick="location.href='/main/trangchu.html'"
+          class="cursor-pointer xs:ml-7 sm:ml-9 md:ml-10 xl:mr-5 xl:ml-0">MyMentor</h1>
+          <ul class="float-left">
+              <li class="inline-block mr-5"><a href="./trangchu.html">Trang chủ</a></li>
+              <li class="inline-block mr-5"><a href="./phonghoc.html">Phòng học</a></li>
+              <li class="inline-block mr-5"><a href="./tailieu.html">Tài liệu</a></li>
+              <li class="inline-block"><a href="./thongbao.html">Thông báo</a></li>
+            </ul>  
+        </label>
+        <div class=" justify-center items-center hidden xl:flex">
+          <div class="form-control">
+            <input type="text" placeholder="Tìm kiếm" class="input input-bordered bg-transparent shadow-none focus:outline-white focus:text-white text-white placeholder:text-white border-x-0 border-t-0 border-b border-white w-24 md:w-auto" />
+          </div>
+          <div class="text-4xl mx-5 text-white">
+            <a href="doanchat.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+          </div>
+          <div class="dropdown dropdown-end hidden xl:inline-block">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-16 rounded-full border border-new-green">
+                  <img  src="/images/me.jpg" />
+                </div>
+              </div>
+              <ul class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black bg-new-green rounded-box w-52">
+                <li><a href="./profile.html">Thông tin cá nhân</a></li>
+                <li><a href="./caidat.html">Cài đặt</a></li>
+                <li><a href="./login.html">Đăng xuất</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="top-navbar-searchchat">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="./doanchat.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+        </div>
+    </nav>
+
+    <!-- chat container -->
+    <div class="min-h-screen w-full p-3 flex flex-col mb-16">
+      <!-- online user container -->
+      <p class="text-black my-2 text-sm md:text-xl xl:hidden font-bold">Đang hoạt động</p>
+      <div class=" flex xl:hidden overflow-auto no-scrollbar box-scroll">    
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/thaygiao1.jfif" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Thầy Bẻo</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/tenhag.png" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Thầy Mười</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/hsphong34.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Thị Nở</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/hsphong24.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Lime Na</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/thaygiao2.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Hiển Chelsea</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/hsphong35.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Aurora</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/thaygiao4.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Thầy Kỳ</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/thaygiao5.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Thầy Thịnh</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/thaygiao6.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Gia Sư ĐZ</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/hsphong32.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Thầy Tùng</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/hsphong33.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Thầy Chí</p>
+        </div>
+        <div class=" flex-col justify-center items-center avatar mr-5">
+          <div class="w-16 sm:w-20 md:w-24 rounded-full ">
+            <img src="/images/hsphong25.jpg" />
+          </div>
+          <p class="text-center text-black text-sm md:text-base truncate">Trinh Trần</p>
+        </div>
+        
+        
+      </div>
+
+      <!-- chat box container -->
+      <div class="flex-col justify-center items-center">
+        <!-- chat box -->
+        <div onclick="location.href='/main/doanchatIN.html'"
+        class="flex items-center my-1 p-2 rounded-xl active:bg-third-theme transition-all" >
+          <div class="avatar online z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/tenhag.png" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Thầy Mười
+            </p>
+            <p class="text-sm sm:text-base md:text-lg lg:xl">
+              Bạn đã gửi một nhãn dán &bull; 10:40
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center p-2 rounded-xl active:bg-third-theme transition-all" >
+          <div class="avatar online z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/thaygiao1.jfif" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Thầy Bẻo
+            </p>
+            <p class="text-sm sm:text-base md:text-lg lg:xl font-bold">
+              Đánh giá thầy 5 sao nhaaa &bull; 18:50
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center p-2 rounded-xl active:bg-third-theme transition-all" >
+          <div class="avatar online z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/hsphong24.jpg" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Lime Na
+            </p>
+            <p class="text-sm sm:text-base md:text-lg font-bold lg:xl">
+              Hihi &bull; 19:20
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center p-2 rounded-xl  active:bg-third-theme transition-all" >
+          <div class="avatar online z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/thaygiao2.jpg" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Thầy Hiển
+            </p>
+            <p class="text-sm sm:text-base md:text-lg lg:xl font-bold">
+              Chuẩn bị học em nhé &bull; 19:23
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center p-2 rounded-xl active:bg-third-theme transition-all" >
+          <div class="avatar z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/thaygiao3.jpg" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Ô Lê Sôn Sa
+            </p>
+            <p class="text-sm sm:text-base md:text-lg lg:xl">
+              Ngày mai chúng ta lại tiếp tục ôn phần 2 trong chương 7 &bull; 21:23
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center p-2 rounded-xl active:bg-third-theme transition-all" >
+          <div class="avatar online z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/hsphong35.jpg" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Aurora
+            </p>
+            <p class="text-sm sm:text-base md:text-lg lg:xl">
+              Ây zà thật là chán quá đi mà &bull; 8:25
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center p-2 rounded-xl active:bg-third-theme transition-all" >
+          <div class="avatar online z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/thaygiao4.jpg" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Thầy Kỳ
+            </p>
+            <p class="text-sm sm:text-base md:text-lg lg:xl">
+              Vậy hả em kkkk &bull; Hôm qua
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center p-2 rounded-xl active:bg-third-theme transition-all" >
+          <div class="avatar online z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/thaygiao5.jpg" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Thầy Thịnh
+            </p>
+            <p class="text-sm sm:text-base md:text-lg font-bold lg:xl">
+              Tôi không dạy em nữa! &bull; 07/11/2023
+            </p>
+          </div>
+        </div>    
+        <div class="flex items-center p-2 rounded-xl active:bg-third-theme transition-all" >
+          <div class="avatar online z-0 hover:cursor-pointer">
+            <div class="w-16 sm:w-24 md:w-28 lg:w-32 rounded-full ">
+              <img src="/images/hsphong25.jpg" />
+            </div>
+          </div>
+          <div class="ml-3 text-black hover:cursor-pointer">
+            <p class="font-bold text-base sm:text-lg md:text-xl lg:text-2xl">
+              Trinh Trần
+            </p>
+            <p class="text-sm sm:text-base md:text-lg lg:xl">
+              Sai rồi em &bull; 13:20
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <!-- Bottom navbar -->
+    <div class="bottom-navbar z-10">
+      <nav class="bottom-navbar-container">
+        <a href="./phonghoc.html"><i class='bx bx-video bx-flip-vertical' ></i></a>
+        <a href="./tailieu.html"><i class='bx bx-file' ></i></a>
+        <a href="./trangchu.html"><i class='bx bx-home-alt' ></i></a>
+        <a href="./thongbao.html"><i class='bx bx-bell' ></i></a>
+        <a href="./caidat.html"><i class='bx bx-cog' ></i></a>
+      </nav>
+    </div>
+
+    <!-- footer -->
+    <footer class=" hidden xl:flex justify-between items-center p-5 bg-second-theme text-white">
+      <div class="flex justify-center items-center">
+          <p>MyMentor &bull; Nhóm 5 &bull; Thiết kế giao diện 63.TTQL-1</p>
+      </div>
+      <div class="text-3xl">
+        <a href="https://www.facebook.com/gbao.283/" target="_blank" rel="noopener noreferrer" class="justify-center flex items-center"><i class='bx bxl-facebook-circle'></i></a>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    const mouseWheel = document.querySelector('.box-scroll');
+      mouseWheel.addEventListener('wheel', function(e) {
+          const race = 20;
+
+          if (e.deltaY > 0)
+              mouseWheel.scrollLeft += race;
+          else 
+              mouseWheel.scrollLeft -= race;
+          e.preventDefault();
+      });
+  </script>
+</body>
+</html>

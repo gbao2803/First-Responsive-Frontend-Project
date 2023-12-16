@@ -1,0 +1,269 @@
+<!DOCTYPE html >
+<html lang="en" class="bg-new-green">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đánh giá</title>
+  <link rel="stylesheet" href="/main/output.css">
+  <link rel="stylesheet" href="/default.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="flex justify-center items-center">
+
+  <!-- BIG CONTAINER -->
+  <div class="min-h-screen w-full overflow-hidden ">
+
+    <!-- Top navbar -->
+    <nav class="bg-second-theme h-24 w-full flex justify-between items-center p-2" >
+        <div class="back-button xl:hidden">
+          <a href="./trangchu.html">
+            <i class='bx bx-arrow-back text-white font-bold text-3xl'></i>
+          </a>
+        </div>
+        <label class="logo cursor-pointer flex justify-center items-center">
+          <h1 onclick="location.href='/main/trangchu.html'"
+          class="cursor-pointer ml-0 sm:ml-9 md:ml-10 xl:mr-5 xl:ml-0">MyMentor</h1>
+          <ul class="float-left">
+              <li class="inline-block mr-5"><a href="./trangchu.html" id="top-active">Trang chủ</a></li>
+              <li class="inline-block mr-5"><a href="./phonghoc.html">Phòng học</a></li>
+              <li class="inline-block mr-5"><a href="./tailieu.html">Tài liệu</a></li>
+              <li class="inline-block"><a href="./thongbao.html">Thông báo</a></li>
+            </ul>  
+        </label>
+        <div class=" justify-center items-center hidden xl:flex">
+          <div class="form-control">
+            <input type="text" placeholder="Tìm kiếm" class="input input-bordered bg-transparent shadow-none focus:outline-white focus:text-white text-white placeholder:text-white border-x-0 border-t-0 border-b border-white w-24 md:w-auto" />
+          </div>
+          <div class="text-4xl mx-5 text-white">
+            <a href="doanchat.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+          </div>
+          <div class="dropdown dropdown-end hidden xl:inline-block">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-16 rounded-full border border-new-green">
+                  <img  src="/images/me.jpg" />
+                </div>
+              </div>
+              <ul class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black bg-new-green rounded-box w-52">
+                <li><a href="./profile.html">Thông tin cá nhân</a></li>
+                <li><a href="./caidat.html">Cài đặt</a></li>
+                <li><a href="./login.html">Đăng xuất</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="top-navbar-searchchat">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="./doanchat.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+        </div>
+    </nav>
+
+    <!-- content container -->
+    <div class="min-h-screen w-full p-5 flex mb-16 xl:mb-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 ">
+        <div class="">
+          <img src="/images/thaygiao1.jfif" class="w-full h-full object-cover rounded-t-2xl xl:rounded-2xl flex justify-center items-center">
+          <p class="text-black p-5 font-bold flex justify-between items-center bg-sidegreen shadow-xl rounded-b-2xl xl:hidden">
+            <span class="text-success text-sm md:text-2xl">Thầy Bẻo</span>
+            <span class="font-normal">4.6<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>(7)
+               <span class="badge badge-success badge-outline">Gia Sư</span> 
+            </span> 
+            </p>
+        </div>
+        <div class=" text-black mt-20 md:mt-0 antialiased">
+          <div class="max-w-5xl mx-auto md:pl-4">
+            <p class="text-black py-12 font-bold hidden md:flex text-2xl justify-between items-center">
+              <span class="text-success  md:text-2xl">Thầy Bẻo</span>
+            <span class="font-normal">4.6<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>(7)
+              <span class="badge badge-success badge-outline">Gia Sư</span> 
+              
+            </span>
+            
+            </p>
+            
+            <form class="mb-6 text-black">
+                <div class="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <label for="comment" class="sr-only">Bình luận gì đó...</label>
+                    <textarea id="comment" rows="6"
+                        class="px-0 w-full text-sm border-0 focus:ring-0 focus:outline-none bg-transparent text-black dark:placeholder-gray-400 dark:bg-gray-800"
+                        placeholder="Bình luận gì đó..." required></textarea>
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                      </div>
+                </div>
+                <button type="submit"
+                    class="inline-flex items-center py-2.5 px-4 text-xs text-center text-white font-bold btn btn-success">
+                    Đăng
+                </button>
+            </form>
+            <div class="flex justify-between items-center mb-6">
+
+                <h2 class="text-lg lg:text-2xl font-bold text-black">Bình luận (7)</h2>
+            </div>
+            <div class="overflow-y-scroll no-scrollbar max-h-128">
+              <div class="p-6 my-5 text-base bg-white border border-second-theme rounded-2xl transition-all duration-300">
+                  <div class="flex justify-between items-center mb-2">
+                      <div class="flex items-center">
+                          <p class="inline-flex items-center mr-3 text-sm text-gray-900 text-black font-semibold">
+                            <img class="mr-2 w-6 h-6 rounded-full object-cover" src="/images/hsphong25.jpg" alt="mitom">Mì tôm thanh long
+                          </p>
+                      </div>
+                      <div>
+                        5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>
+                      </div>   
+                  </div>
+                  <p>
+                    Trong thời gian qua em thật sự bất ngờ khi đón nhận được sự giúp đỡ và giảng dạy của thầy
+                    Em cảm ơn thầy, chất lượng với nhiều bài giảng thú ví và độc lạ.
+                    Em cũng rất xin lỗi vì nhiều khi không hiểu bài thầy giảng
+                    Tuy nhiên, em xin phép được đánh giá 5 sao cho thầy qua 6 tháng học tập.
+                    Biết đâu sau 6 tháng nữa em có thành tích đặc biệt, có nhiều học bổng hơn, lúc đó em lại đánh giá cho thầy 10 sao... 
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                  </div>
+              </div>
+              <div class="p-6 my-5 text-base bg-white border border-second-theme rounded-2xl transition-all duration-300">
+                  <div class="flex justify-between items-center mb-2">
+                      <div class="flex items-center">
+                          <p class="inline-flex items-center mr-3 text-sm text-gray-900 text-black font-semibold">
+                            <img class="mr-2 w-6 h-6 rounded-full object-cover" src="/images/me.jpg" alt="BeoNgyn">Bẻo Nguỹn
+                          </p>
+                      </div>
+                      <div>
+                        5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>
+                      </div>   
+                  </div>
+                  <p>
+                    Thầy dạy chán nhưng được cái đẹp zai.
+                    </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                  </div>
+              </div>
+              <div class="p-6 my-5 text-base bg-white border border-second-theme rounded-2xl transition-all duration-300">
+                  <div class="flex justify-between items-center mb-2">
+                      <div class="flex items-center">
+                          <p class="inline-flex items-center mr-3 text-sm text-gray-900 text-black font-semibold">
+                            <img class="mr-2 w-6 h-6 rounded-full object-cover" src="/images/hsphong21.jfif" alt="Thinh">WangThinh
+                          </p>
+                      </div>
+                      <div>
+                        4<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>
+                      </div>   
+                  </div>
+                  <p>
+                   Hay, quả thật là một bài viết vô cùng cảm động ! Đã lâu lắm rồi mình chưa được đọc một bài viết mang đậm tính nhân văn như thế này. 
+                   Mình thật sự rất sung sướng, rất hạnh phúc. Mình xin cảm ơn Đảng, cảm ơn nhà nước, cảm ơn các tổ chức, các cơ quan ban ngành đoàn thể, 
+                   cảm ơn các cấp lãnh đạo đã lèo lái con thuyền xã hội chủ nghĩa, cảm ơn các anh hùng, các liệt sĩ đã bỏ công hy sinh để đất nước hòa bình, 
+                   để mình được ngồi đây đọc bài viết này. 
+                   Cảm ơn bố mẹ đã nuôi dạy con khôn lớn, cảm ơn các giảng viên, các thầy cô đã dạy em biết chữ để ngày hôm nay em được đọc bài viết này. Vâng xin cảm ơn tất cả....
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                  </div>
+              </div> 
+              <div class="p-6 my-5 text-base bg-white border border-second-theme rounded-2xl transition-all duration-300">
+                  <div class="flex justify-between items-center mb-2">
+                      <div class="flex items-center">
+                          <p class="inline-flex items-center mr-3 text-sm text-gray-900 text-black font-semibold">
+                            <img class="mr-2 w-6 h-6 rounded-full object-cover" src="/images/hsphong42.webp" alt="Antony">An Tô Ny
+                          </p>
+                      </div>
+                      <div>
+                        5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>
+                      </div>   
+                  </div>
+                  <p>
+                   Sau khi nghe thầy giảng bài. Sáng ra đường ăn sáng cứ như là vua mang long bào. 
+                   Đi ra đường chó nhìn sợ không dám sủa. Trưa đua vài lệnh chiều xanh tím. 
+                   Hội nyc thì đồng loạt đòi nối lại tình xưa. Bạn bè thì nhìn tôi cũng phải cúi đầu nể 10 phần. 
+                   Về nhà thì gia đình tự hào, hàng xóm thì ganh tỵ vì biết tôi là học trò Thầy Bẻo 🐧
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                  </div>
+              </div>
+              <div class="p-6 my-5 text-base bg-white border border-second-theme rounded-2xl transition-all duration-300">
+                  <div class="flex justify-between items-center mb-2">
+                      <div class="flex items-center">
+                          <p class="inline-flex items-center mr-3 text-sm text-gray-900 text-black font-semibold">
+                            <img class="mr-2 w-6 h-6 rounded-full object-cover" src="/images/hsphong31.jpg" alt="Ky">Phong Hậu Chiếu Bí
+                          </p>
+                      </div>
+                      <div>
+                        5<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>
+                      </div>   
+                  </div>
+                  <p>
+                    Trong thời gian được học tập và làm quen với thầy, 
+                    em cảm thấy thầy là một người thầy tuyệt vời và có lẽ em đã rất may mắn khi được làm việc với thầy,
+                    được học hỏi thầy qua các bài học. Sự hỗ trợ và hướng dẫn của thầy đã giúp cho em tiến bộ và trưởng thành hơn rất nhiều.
+                  </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                  </div>
+              </div>
+              <div class="p-6 my-5 text-base bg-white border border-second-theme rounded-2xl transition-all duration-300">
+                  <div class="flex justify-between items-center mb-2">
+                      <div class="flex items-center">
+                          <p class="inline-flex items-center mr-3 text-sm text-gray-900 text-black font-semibold">
+                            <img class="mr-2 w-6 h-6 rounded-full object-cover" src="/images/thaygiao3.jpg" alt="Ole">Ô Lê Sôn Sa
+                          </p>
+                      </div>
+                      <div>
+                        4<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>
+                      </div>   
+                  </div>
+                  <p>
+                    Idol của lòng tôi!!! <3 <3 <3
+                    </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                  </div>
+              </div>
+              <div class="p-6 my-5 text-base bg-white border border-second-theme rounded-2xl transition-all duration-300">
+                  <div class="flex justify-between items-center mb-2">
+                      <div class="flex items-center">
+                          <p class="inline-flex items-center mr-3 text-sm text-gray-900 text-black font-semibold">
+                            <img class="mr-2 w-6 h-6 rounded-full object-cover" src="/images/thaygiao3.jpg" alt="Ole">Ô Lê Sôn Sa
+                          </p>
+                      </div>
+                      <div>
+                        4<i class='bx bxs-star text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'></i>
+                      </div>   
+                  </div>
+                  <p>
+                    Idol của lòng tôi!!! <3 <3 <3
+                    </p>
+                  <div class="flex items-center mt-4 space-x-4">
+                  </div>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom navbar -->
+    <div class="bottom-navbar z-10">
+      <nav class="bottom-navbar-container">
+        <a href="./phonghoc.html"><i class='bx bx-video bx-flip-vertical' ></i></a>
+        <a href="./tailieu.html"><i class='bx bx-file' ></i></a>
+        <a href="./trangchu.html" id="active"><i class='bx bx-home-alt' ></i></a>
+        <a href="./thongbao.html"><i class='bx bx-bell' ></i></a>
+        <a href="./caidat.html"><i class='bx bx-cog' ></i></a>
+      </nav>
+    </div>
+
+    <!-- footer -->
+    <footer class=" hidden xl:flex justify-between items-center p-5 bg-second-theme text-white">
+      <div class="flex justify-center items-center">
+          <p>MyMentor &bull; Nhóm 5 &bull; Thiết kế giao diện 63.TTQL-1</p>
+      </div>
+      <div class="text-3xl">
+        <a href="https://www.facebook.com/gbao.283/" target="_blank" rel="noopener noreferrer" class="justify-center flex items-center"><i class='bx bxl-facebook-circle'></i></a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

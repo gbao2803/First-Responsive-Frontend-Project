@@ -1,0 +1,135 @@
+<!DOCTYPE html >
+<html lang="en" class="bg-new-green">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông báo</title>
+  <link rel="stylesheet" href="/main/output.css">
+  <link rel="stylesheet" href="/css/thongbao.css">
+  <link rel="stylesheet" href="/default.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="flex justify-center items-center">
+
+  <!-- BIG CONTAINER -->
+  <div class="min-h-screen w-full overflow-hidden ">
+
+    <!-- Top navbar -->
+    <nav class="bg-second-theme h-24 w-full flex justify-between items-center p-2" >
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class='bx bx-menu text-white' ></i>
+        </label>
+        <label class="logo cursor-pointer flex justify-center items-center">
+          <h1 onclick="location.href='/main/trangchu.html'"
+          class="cursor-pointer ml-0 sm:ml-9 md:ml-10 xl:mr-5 xl:ml-0">MyMentor</h1>
+          <ul class="float-left">
+              <li class="inline-block mr-5"><a href="./trangchu.html">Trang chủ</a></li>
+              <li class="inline-block mr-5"><a href="./phonghoc.html">Phòng học</a></li>
+              <li class="inline-block mr-5"><a href="./tailieu.html">Tài liệu</a></li>
+              <li class="inline-block"><a href="./thongbao.html" id="top-active">Thông báo</a></li>
+            </ul>  
+        </label>
+        <div class=" justify-center items-center hidden xl:flex">
+          <div class="form-control">
+            <input type="text" placeholder="Tìm kiếm" class="input input-bordered bg-transparent shadow-none focus:outline-white focus:text-white text-white placeholder:text-white border-x-0 border-t-0 border-b border-white w-24 md:w-auto" />
+          </div>
+          <div class="text-4xl mx-5 text-white">
+            <a href="doanchat.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+          </div>
+          <div class="dropdown dropdown-end hidden xl:inline-block">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-16 rounded-full border border-new-green">
+                  <img  src="/images/me.jpg" />
+                </div>
+              </div>
+              <ul class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black bg-new-green rounded-box w-52">
+                <li><a href="./profile.html">Thông tin cá nhân</a></li>
+                <li><a href="./caidat.html">Cài đặt</a></li>
+                <li><a href="./login.html">Đăng xuất</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="top-navbar-searchchat">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="./doanchat.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+        </div>
+    </nav>
+
+    <!-- content container -->
+    <div class="min-h-screen w-full px-6 flex flex-col mt-5 mb-16 xl:mb-0">
+      <div class="thongbao-container text-black">
+          <p>Thông báo mới</p>
+          <div class="thongbao-box-text">
+            <img src="/images/logo.png">
+            <p>
+              Voucher giảm giá 80% dành riêng cho bạn!
+            </p>
+          </div>
+        <p>Thông báo trước đó</p>
+          <div class="thongbao-box-text">
+            <img src="/images/logo.png">
+            <p>
+              Voucher giảm giá 80% dành riêng cho bạn!
+            </p>
+          </div>
+          <div class="thongbao-box-text">
+            <img src="/images/logo.png">
+            <p>
+              Voucher giảm giá 80% dành riêng cho bạn!
+            </p>
+          </div>
+          <div class="thongbao-box-text">
+            <img src="/images/logo.png">
+            <p>
+              Voucher giảm giá 80% dành riêng cho bạn!
+            </p>
+          </div>
+          <div class="thongbao-box-text">
+            <img src="/images/logo.png">
+            <p>
+              Voucher giảm giá 80% dành riêng cho bạn!
+            </p>
+          </div>
+          <div class="thongbao-box-text">
+            <img src="/images/logo.png">
+            <p>
+              Voucher giảm giá 80% dành riêng cho bạn!
+            </p>
+          </div>
+          <div class="thongbao-box-text">
+            <img src="/images/logo.png">
+            <p>
+              Voucher giảm giá 80% dành riêng cho bạn!
+            </p>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom navbar -->
+    <div class="bottom-navbar z-10">
+      <nav class="bottom-navbar-container">
+        <a href="./phonghoc.html"><i class='bx bx-video bx-flip-vertical' ></i></a>
+        <a href="./tailieu.html"><i class='bx bx-file' ></i></a>
+        <a href="./trangchu.html"><i class='bx bx-home-alt' ></i></a>
+        <a href="./thongbao.html" id="active"><i class='bx bx-bell' ></i></a>
+        <a href="./caidat.html"><i class='bx bx-cog' ></i></a>
+      </nav>
+    </div>
+
+    <!-- footer -->
+    <footer class=" hidden xl:flex justify-between items-center p-5 bg-second-theme text-white">
+      <div class="flex justify-center items-center">
+          <p>MyMentor &bull; Nhóm 5 &bull; Thiết kế giao diện 63.TTQL-1</p>
+      </div>
+      <div class="text-3xl">
+        <a href="https://www.facebook.com/gbao.283/" target="_blank" rel="noopener noreferrer" class="justify-center flex items-center"><i class='bx bxl-facebook-circle'></i></a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

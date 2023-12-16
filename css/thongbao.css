@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html::-webkit-scrollbar{
+  display: none;
+}
+.iphone-container{
+  width: 100%;
+  min-height: 1000px;
+  background: #F2FFF2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  user-select: none;
+}
+.thongbao-container{
+  margin-bottom: 20px;
+}
+.wrapper{
+  width: 100%;
+  margin-bottom: 65px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px 20px;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  transition: background .25s;
+}
+.top-navbar-searchchat{
+  color: white;
+  display: none;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: left;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+.wrapper p{
+  font-size: 1rem;
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+.thongbao-container{
+  margin-bottom: 20px;
+}
+.tailieu-container{
+  margin-bottom: 10px;
+}
+.thongbao-box-text{
+  width: 100%;
+  height: 80px;
+  padding: 0px 20px;
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: 15% 80%;
+  column-gap: 3%;
+  border-radius: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.thongbao-box-text img{
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+.thongbao-box-text p{
+  margin: auto 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bottom-navbar{
+  width: 100%;
+  height: 75px;
+  border-top: 1px solid #000;
+  background: #709C6F;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+.bottom-navbar-container{
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.bottom-navbar a i{
+  font-size: 30px;
+  color: #ccc;
+  transition: 0.25s;
+}
+.bottom-navbar #active i{
+  color: white;
+  font-size: 40px;
+  transition: 0.2s ease-in-out;
+}
+
+
+.float-left li a{
+  color: white;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  text-decoration: none;
+  padding: 0 7px;
+  transition: 0.25s;
+}
+.float-left a:after{
+  content: "";
+  position: absolute;
+  background: white;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.float-left a:hover:after{
+  width: 100%;
+}
+.float-left a:hover{
+  font-size: 18px;
+}
+.bottom-navbar-container a{
+  position: relative;
+  text-decoration: none;
+  padding: 0 7px;
+}
+.bottom-navbar-container a:after{
+  content: "";
+  position: absolute;
+  background: white;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  transition: 0.25s;
+}
+.bottom-navbar-container a:hover:after{
+  width: 100%;
+}
+.bottom-navbar a i:hover{
+  font-size: 50px;
+}
+
+/* RESPONSIVE */
+  @media (min-width: 972px){
+  .wrapper p{
+    font-size: 2rem;
+  }
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  .thongbao-box-text{
+    height: 200px;
+  }
+  .thongbao-box-text img{
+    width: 120px;
+    height: 120px;
+  }
+  .thongbao-box-text p{
+    font-size: 30px;
+  }
+}
+@media (max-width: 971px){
+  .top-navbar-searchchat{
+  color: white;
+  display: block;
+  }
+  .float-left li a{
+    color: black;
+  }
+  .float-left a:after{
+  background: black;
+  }
+  .checkbtn{
+    display: block;
+  }
+  .bottom-navbar{
+    display: block;
+  }
+  .top-navbar-searchchat a i{
+    display: inline-block;
+  }
+  ul{
+    position: absolute;
+    width: 80%;
+    background: #DEF4DD;
+    height: 100vh;
+    text-align: center;
+    top: 95px;
+    left: -100%;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .top-navbar-searchchat a i{
+    display: inline-block;
+    font-size: 40px;
+  }
+  label.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0px;
+  font-weight: bold;
+  }
+  .checkbtn{
+    font-size: 40px;
+  }
+}
+@media (min-width: 560px) and (max-width: 970px){
+  .wrapper p{
+    font-size: 1.5rem;
+  }
+  .bottom-navbar a i{
+    font-size: 40px;
+    color: #ccc;
+  }
+  .bottom-navbar #active i{
+    color: white;
+    font-size: 50px;
+    transition: 0.2s ease-in-out;
+  }
+  .bottom-navbar-container{
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .thongbao-box-text{
+    height: 100px;
+  }
+  .thongbao-box-text img{
+    width: 60px;
+    height: 60px;
+  }
+  .thongbao-box-text p{
+    font-size: 18px;
+  }
+}
+@media (min-width: 423px) and (max-width: 560px){
+  .checkbtn{
+    font-size: 30px;
+  }
+  .top-navbar-searchchat a i{
+    font-size: 30px;
+    }
+  label.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0px;
+    font-weight: bold;
+  }
+  .bottom-navbar-container a i{
+    font-size: 24px;
+  }
+  .bottom-navbar-container #active i{
+    font-size: 35px;
+  }
+  .bottom-navbar a i{
+    font-size: 30px;
+    color: #ccc;
+  }
+  .bottom-navbar #active i{
+    color: white;
+    font-size: 40px;
+    transition: 0.2s ease-in-out;
+  }
+  .thongbao-box-text{
+    height: 90px;
+  }
+  .thongbao-box-text img{
+    width: 50px;
+    height: 50px;
+  }
+  .thongbao-box-text p{
+    font-size: 16px;
+  }
+}
+@media (min-width: 150px) and (max-width:423px){
+  .checkbtn{
+    font-size: 22px;
+  }
+  .top-navbar-searchchat a i{
+  font-size: 22px;
+  }
+  label.logo{
+  color: white;
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0px;
+  font-weight: bold;
+  }
+  .bottom-navbar a i{
+    font-size: 25px;
+    color: #ccc;
+  }
+  .bottom-navbar #active i{
+    color: white;
+    font-size: 35px;
+    transition: 0.2s ease-in-out;
+  }
+  .thongbao-box-text img{
+    width: 35px;
+    height: 35px;
+  }
+  .thongbao-box-text p{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html >
+<html lang="en" class="bg-new-green">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ứng tuyển gia sư</title>
+  <link rel="stylesheet" href="/main/output.css">
+  <link rel="stylesheet" href="/default.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/test.css">
+</head>
+<body class="flex justify-center items-center">
+
+  <!-- BIG CONTAINER -->
+  <div class="min-h-screen w-full overflow-hidden ">
+
+    <!-- Top navbar -->
+    <nav class="bg-second-theme h-24 w-full flex justify-between items-center p-2" >
+        <div class="back-button xl:hidden">
+          <a href="./caidat.html">
+            <i class='bx bx-arrow-back text-white font-bold text-3xl'></i>
+          </a>
+        </div>
+        <label class="logo cursor-pointer flex justify-center items-center">
+          <h1 onclick="location.href='/main/trangchu.html'"
+          class="cursor-pointer ml-0 sm:ml-9 md:ml-10 xl:mr-5 xl:ml-0">MyMentor</h1>
+          <ul class="float-left">
+              <li class="inline-block mr-5"><a href="./trangchu.html">Trang chủ</a></li>
+              <li class="inline-block mr-5"><a href="./phonghoc.html">Phòng học</a></li>
+              <li class="inline-block mr-5"><a href="./tailieu.html">Tài liệu</a></li>
+              <li class="inline-block"><a href="./thongbao.html">Thông báo</a></li>
+            </ul>  
+        </label>
+        <div class=" justify-center items-center hidden xl:flex">
+          <div class="form-control">
+            <input type="text" placeholder="Tìm kiếm" class="input input-bordered bg-transparent shadow-none focus:outline-white focus:text-white text-white placeholder:text-white border-x-0 border-t-0 border-b border-white w-24 md:w-auto" />
+          </div>
+          <div class="text-4xl mx-5 text-white">
+            <a href="./doanchat.html"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+          </div>
+          <div class="dropdown dropdown-end hidden xl:inline-block">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-16 rounded-full border border-new-green">
+                  <img  src="/images/me.jpg" />
+                </div>
+              </div>
+              <ul class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-black bg-new-green rounded-box w-52">
+                <li><a href="profile.html">Thông tin cá nhân</a></li>
+                <li><a href="caidat.html">Cài đặt</a></li>
+                <li><a href="login.html">Đăng xuất</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="top-navbar-searchchat">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-message-rounded-dots bx-flip-horizontal'></i></a>
+        </div>
+    </nav>
+
+    <!-- content container -->
+    <div class="min-h-screen w-full p-5 xl:p-0 xl:flex justify-center mb-16 xl:mb-0">
+      <!-- sidebar when desktop -->
+      <div class="w-2/5 min-h-screen hidden xl:flex flex-col bg-sidegreen shadow-2xl transition-all ">
+        <div class=" flex flex-col justify-center items-center avatar p-5">
+          <div class="w-36 rounded-full ">
+            <img src="/images/me.jpg" />
+          </div>
+          <p class="text-center text-black text-xl md:text-2xl font-bold my-1">Bẻo Nguỹn</p>
+          <p class="text-black">Username: beong</p>
+        </div>
+        <div onclick="location.href='/main/profile.html'"
+        class="border-x-4 border-l-transparent bg-green-50 active:bg-green-200 shadow-xl transition-all cursor-pointer border-y border-r-0 h-16 flex justify-start items-center">
+          <p class="pl-4 text-xl text-black flex justify-center items-center">
+            <i class='bx bx-user mr-3 text-2xl'></i> Thông tin cá nhân
+          </p>
+        </div>
+        <div onclick="location.href='/main/wallet.html'"
+        class="border-x-4 bg-green-50 hover:bg-green-100 active:bg-green-200 shadow-xl transition-all cursor-pointer border-r-0 border-l-transparent border-b h-16 flex justify-start items-center">
+          <p class="pl-4 text-xl text-black flex justify-center items-center">
+            <i class='bx bx-wallet mr-3 text-2xl'></i> Ví người dùng
+          </p>
+        </div>
+        <div onclick="location.href='/main/ungtuyen.html'"
+        class="border-x-4 bg-green-100 hover:bg-green-100 active:bg-green-200  shadow-xl transition-all cursor-pointer border-r-0 border-l-green-600 border-b h-16 flex justify-start items-center">
+          <p class="pl-4 text-xl text-black flex justify-center items-center">
+            <i class='bx bx-file mr-3 text-2xl' ></i> Ứng tuyển gia sư
+          </p>
+        </div>
+        <div onclick="location.href='/main/tinhtrangthue.html'"
+        class="border-x-4 bg-green-50 hover:bg-green-100 active:bg-green-200 shadow-xl transition-all cursor-pointer border-r-0 border-l-transparent border-b h-16 flex justify-start items-center">
+          <p class="pl-4 text-xl text-black flex justify-center items-center">
+            <i class='bx bx-time mr-3 text-2xl' ></i> Tình trạng thuê
+          </p>
+        </div>
+        <div onclick="location.href='/main/hotro.html'"
+        class="border-x-4 bg-green-50 hover:bg-green-100 active:bg-green-200 shadow-xl transition-all cursor-pointer border-r-0 border-l-transparent border-b h-16 flex justify-start items-center">
+          <p class="pl-4 text-xl text-black flex justify-center items-center">
+            <i class='bx bx-support mr-3 text-2xl' ></i> Hỗ trợ người dùng
+          </p>
+        </div>
+        <div onclick="location.href='/main/caidatnc.html'"
+        class="border-x-4 bg-green-50 hover:bg-green-100 active:bg-green-200 shadow-xl transition-all cursor-pointer border-r-0 border-l-transparent border-b h-16 flex justify-start items-center">
+          <p class="pl-4 text-xl text-black flex justify-center items-center">
+            <i class='bx bx-cog mr-3 text-2xl' ></i> Cài đặt nâng cao
+          </p>
+        </div>
+        <div onclick="location.href='/main/login.html'"
+        class="border-x-4 bg-green-50 hover:bg-red-300 active:bg-red-400 hover:text-red-950 shadow-xl transition-all  cursor-pointer border-r-0 border-l-transparent border-b h-16 flex justify-start items-center">
+          <p class="pl-4 text-xl text-red-600 flex justify-center items-center">
+            <i class='bx bx-log-out mr-3 text-2xl' ></i> Đăng xuất
+          </p>
+        </div>
+      </div>     
+      
+      <!-- input -->     
+        <div class="xl:p-10 xl:w-full">
+          <p class="font-bold text-black py-4 pl-4 text-xl flex justify-start xl:text-2xl items-center">
+            Ứng tuyển gia sư
+            <span class="flex justify-start items-center "><i class='bx bx-file ml-1 text-2xl xl:text-4xl cursor-pointer'></i></span>
+          </p>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Họ và tên</span>
+            <input type="text" placeholder="Nhập họ và tên của bạn"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Email</span>
+            <input type="text" placeholder="example@gmail.com"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Số điện thoại</span>
+            <input type="text" placeholder="0123456789"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Ngày sinh</span>
+            <input type="date" placeholder="DD / MM / YYYY"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Địa chỉ</span>
+            <input type="text" placeholder="Số 123 đường 567"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Trình độ học vấn</span>
+            <input type="text" placeholder="Đại Học, Cao Đẳng..."
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Trường / Trung tâm đào tạo</span>
+            <input type="text" placeholder="Nhập tên trường / trung tâm đào tạo"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Chuyên ngành đào tạo</span>
+            <input type="text" placeholder="Nhập chuyên ngành đào tạo"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Tên bằng cấp / chứng chỉ</span>
+            <input type="text" placeholder="Cử nhân sư phạm lịch sử, Cao đẳng sư phạm tiếng Anh"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Môn học giảng dạy</span>
+            <input type="text" placeholder="Tiếng Anh, Vật Lý, Hóa Học..."
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Lớp học giảng dạy</span>
+            <input type="text" placeholder="Lớp 5, Lớp 12..."
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Mức lương mong muốn</span>
+            <input type="text" placeholder="0 VNĐ"
+            class="input input-bordered bg-transparent border-second-theme focus:border-second-theme disabled:bg-transparent disabled:text-black text-black disabled:border-second-theme  focus:outline-second-theme w-full" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Ảnh thẻ</span>
+            <input type="file" class="file-input file-input-bordered file-input-success bg-transparent w-full max-w-xs" />
+          </label>
+          <label class="form-control w-full mb-5">
+            <span class="label-text pl-4 my-2 text-base font-bold text-black">Hình ảnh chứng chỉ / Bằng cấp</span>
+            <input type="file" class="file-input file-input-bordered file-input-success bg-transparent w-full max-w-xs" />
+          </label>
+          <div class="flex justify-center items-center ">
+            <button class="btn flex-nowrap btn-success px-16 py-8 text-xl">Gửi</button>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom navbar -->
+    <div class="bottom-navbar z-10">
+      <nav class="bottom-navbar-container">
+        <a href="./phonghoc.html"><i class='bx bx-video bx-flip-vertical' ></i></a>
+        <a href="./tailieu.html"><i class='bx bx-file' ></i></a>
+        <a href="./trangchu.html"><i class='bx bx-home-alt' ></i></a>
+        <a href="./thongbao.html"><i class='bx bx-bell' ></i></a>
+        <a href="./caidat.html" id="active"><i class='bx bx-cog' ></i></a>
+      </nav>
+    </div>
+
+    <!-- footer -->
+    <footer class=" hidden xl:flex justify-between items-center p-5 bg-second-theme text-white">
+      <div class="flex justify-center items-center">
+          <p>MyMentor &bull; Nhóm 5 &bull; Thiết kế giao diện 63.TTQL-1</p>
+      </div>
+      <div class="text-3xl">
+        <a href="https://www.facebook.com/gbao.283/" target="_blank" rel="noopener noreferrer" class="justify-center flex items-center"><i class='bx bxl-facebook-circle'></i></a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

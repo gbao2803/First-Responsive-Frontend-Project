@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="lemonade" class="bg-gradient-to-tr from-green-200 min-h-screen flex justify-center items-center">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="/main/output.css">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+</head>
+<body class="min-h-screen">
+  
+  <div class=" flex justify-center items-center lg:min-h-screen min-h-screen m-6">
+
+    <!-- container -->
+    <div class=" bg-new-green xs:h-full md:min-h-screen lg:grid lg:grid-cols-5 shadow-xl border border-black rounded-2xl">
+
+      
+      <!-- image -->
+        <div class="xs:h-96 flex justify-center items-center bg-second-theme lg:hidden rounded-t-2xl">
+          <img src="/images/logo.png">
+        </div>
+
+      <!-- login form -->
+        <div class="w-full lg:col-span-2 p-5 m-auto">
+
+            <!-- button box -->
+            <div class="flex justify-evenly">
+              <button onclick="location.href='/main/login.html'"
+              class="btn w-1/2 mr-2 bg-transparent border-none shadow-none hover:bg-green-200 text-black uppercase xs:text-xs sm:text-sm text-sm md:text-xl">Đăng nhập</button>
+              <button onclick="location.href='/main/register.html'"
+              class="btn w-1/2 shadow-none xs:text-xs sm:text-sm md:text-xl uppercase bg-second-theme hover:bg-green-800">Đăng ký</button>
+            </div>
+             <!-- dang ky form-->
+            <div class="">
+              <div class="mt-5">
+                <label for="name"><span class="label-text p-5 text-base font-medium md:text-xl">Họ và tên</span></label>
+                  <input type="text" placeholder="Nhập họ và tên của bạn" class="input input-bordered input-success w-full my-3 lg:my-5" />
+                <label for="username"><span class="label-text p-5 text-base font-medium md:text-xl">Tên đăng nhập</span></label>
+                  <input type="text" placeholder="Nhập tên dăng nhập của bạn" class="input input-bordered input-success w-full my-3 lg:my-5" />
+                <label for="password"><span class="label-text p-5 text-base font-medium md:text-xl">Mật khẩu</span></label>
+                  <input type="password" placeholder="Nhập mật khẩu" class="input input-bordered input-success w-full my-3 lg:my-5" />
+                <label for="passwordagain"><span class="label-text p-5 text-base font-medium md:text-xl">Nhập lại mật khẩu</span></label>
+                  <input type="password" placeholder="Hãy nhập lại mật khẩu" class="input input-bordered input-success w-full my-3 lg:my-5" />
+                <label for="phone-number"><span class="label-text p-5 text-base font-medium md:text-xl">Số điện thoại</span></label>
+                  <input type="text" placeholder="Nhập số điện thoại của bạn" class="input input-bordered input-success w-full my-3 lg:my-5" />
+                <label for="email"><span class="label-text p-5 text-base font-medium md:text-xl">Nhập Email của bạn</span></label>
+                  <input type="text" placeholder="Nhập Email của bạn" class="input input-bordered input-success w-full my-3 lg:my-5" />
+                <label class="cursor-pointer label justify-start">
+                  <input type="checkbox" checked="checked" class="checkbox checkbox-success" />
+                  <span class="text-sm ml-3 flex justify-center items-center font-normal md:text-lg lg:text-xl ">Tôi đồng ý với các điều khoản</span>
+                </label>
+              </div>
+            </div>
+            <!-- sign in button -->
+            <div>
+              <button class="btn btn-success w-full my-3 bg-second-theme hover:bg-green-800 text-white uppercase text-sm md:text-xl">Xác nhận đăng ký</button>
+            </div>
+
+        </div>
+
+      <!-- image -->
+        <div class=" lg:flex justify-center items-center hidden bg-second-theme lg:col-span-3 lg:min-h-screen rounded-r-2xl">
+          <img src="/images/logo.png">
+        </div>
+    </div>
+
+  </div>
+  
+
+</body>
+</html>
